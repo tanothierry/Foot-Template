@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400&display=swap');
+
+
+.u-mgt-big{margin-top: 50px;}
+.u-mgb-medium{margin-top: 50px;}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    padding: 50px;
+    font-family: 'Lato', sans-serif;
+
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+a{
+    color: #24cfcf;
+    text-decoration: none;
+}
+
+.row{
+    display: flex;
+}
+
+.column-1{
+    flex: 1;
+    padding: 0 10px;
+}
+
+#home-page{
+    min-height: 100vh;
+    padding: 0;
+}
+
+.block{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block div{
+    text-align: center;
+}
+
+.block div h3{
+    max-width: 300px;
+    margin: 10px auto 20px;
+    line-height: 30px;
+}
+
+.block div button{
+    font-size: 16px;
+    padding: 7px 10px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.1);
+    transition: all .2s;
+}
+
+.block div button:hover{
+    transform: translateY(-10px) scale(1.1);
+}
+
+.block img{
+    max-width: 300px;
+}
+
+.pl-block,.bg-pl{
+    background: #37003a;
+}
+
+.liga-block{
+    background: #fff;
+}
+
+.pl-block h3{
+    color: #fff;
+}
+
+.liga-block h3{
+    color: #003472;
+}
+
+.pl-block hr{
+    width: 100px;
+    height: 5px solid #fff;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+.liga-block hr{
+    width: 100px;
+    height: 5px solid #003472;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+.pl-block button{
+    background-color: #fa035c;
+}
+
+.liga-block button{
+    background-color: #003472;
+    color: #fff;
+}
+
+main{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.sidebar-controller,
+.close-sidebar{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-controller img,
+.close-sidebar img{
+    max-height: 16px;
+}
+
+.sidebar-controller{
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.1);
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #fff;
+}
+
+.close-sidebar{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #f7f7f7;
+    height: 100vh;
+    width: 260px;
+    z-index: 10000;
+    display: none;
+}
+
+.sidebar ul{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+.sidebar ul li{
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.sidebar ul li img{
+    max-height: 40px;
+}
+
+.sidebar ul hr{
+    margin-top: 20px;
+    border-radius: 25px;
+    width: 70px;
+}
+
+.pl-sidebar ul hr{
+    border: 2px solid #37003a;
+}
+
+.pl-sidebar ul li small{
+    color: #37003a;
+}
+
+.ll-sidebar ul hr{
+    border: 2px solid #003472;
+}
+
+.ll-sidebar ul li small{
+    color: #003472;
+}
+
+.sidebar ul li .other-league{
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 5px 5px 5px 10px;
+    transition:all .2s;
+}
+
+.sidebar ul li .other-league:hover{
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.1);
+}
+
+.header-block{
+    height: 50vh;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.premier-league{
+    background-color: #dbc4e4;
+}
+
+.liga{
+    background-color: #acbed4;
+}
+
+.header-block img{
+    max-height: 180px;
+}
+
+.presentation{
+    text-align:center;
+}
+
+.presentation .pl-title{
+    color: #3f1052;
+}
+
+.presentation .liga-title{
+    color: #003472;
+}
+
+.presentation hr{
+    width: 70px;
+    margin: 15px auto;
+    border-radius: 25px;
+}
+
+.presentation .pl-divider{
+    border: 2px solid #3f1052;
+}
+
+.presentation .liga-divider{
+    border: 2px solid #003472;
+}
+
+.presentation p{
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.club-card{
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.1);
+}
+
+.club-card__banner{
+    height: 300px;
+    background: #dbc4e4;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.chelsea{
+    background:linear-gradient(#3a6dd36e,#3a6dd36e), url(../img/premier-league/banner/chelsea-banner.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.liverpool{
+    background:linear-gradient(#8b1d286e,#8b1d286e), url(../img/premier-league/banner/liverpool-banner.jpg) top no-repeat;
+    background-size: cover;
+}
+
+.wolf{
+    background:linear-gradient(#deae026e,#deae026e), url(../img/premier-league/banner/wolf-banner.jpg) top no-repeat;
+    background-size: cover;
+}
+
+.united{
+    background:linear-gradient(#a107176e,#a107176e), url(../img/premier-league/banner/united-banner.png) top no-repeat;
+    background-size: cover;
+}
+
+.city{
+    background:linear-gradient(#03496f6e,#03496f6e), url(../img/premier-league/banner/city-banner.jpg) top no-repeat;
+    background-size: cover;
+}
+
+.spurs{
+    background:linear-gradient(#00a7a76e,#00a7a76e), url(../img/premier-league/banner/tottenham-banner.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.barca{
+    background:linear-gradient(#a107176e,#a107176e), url(../img/liga/banner/barca-banner.jpg) top no-repeat;
+    background-size: cover;
+}
+
+.seville{
+    background:linear-gradient(#a107176e,#a107176e), url(../img/liga/banner/seville-banner.jpg) top no-repeat;
+    background-size: cover;
+}
+
+.atletico{
+    background:linear-gradient(#a107176e,#a107176e), url(../img/liga/banner/atletico-banner.jpg) top no-repeat;
+    background-size: cover;
+}
+
+.real{
+    background:linear-gradient(#00a7a76e,#00a7a76e), url(../img/liga/banner/real-banner.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.valence{
+    background:linear-gradient(#03496f6e,#03496f6e), url(../img/liga/banner/valence-banner.png) top no-repeat;
+    background-size: cover;
+}
+
+.getafe{
+    background:linear-gradient(#03496f6e,#03496f6e), url(../img/liga/banner/getafe-banner.jpg) top no-repeat;
+    background-size: cover;
+}
+
+.club-description{
+    padding: 10px;
+}
+
+.club-description h2{
+    margin-top: -50px;
+    margin-left: 87px;
+}
+
+.club-description .pl-color{
+    color: #3f1052;
+}
+
+.club-description .liga-color{
+    color: #003472;
+}
+
+.club-description img{
+    max-height: 80px;
+    margin-top: -30px;
+    padding: 7px;
+    background-color: #fff;
+}
+
+.club-description p{
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.5rem;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.club-description .social-list li a div{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.1);
+    transition: all .1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.club-description .social-list li a:hover div{
+    background-color: #dbc4e47e;
+}
+
+.club-description .social-list li a .twitter{
+    background: url(../img/social/Twitter_Bird.png) center no-repeat;
+    background-size: 50%;
+}
+
+.club-description .social-list li a .g-plus{
+    background: url(../img/social/g-plus.png) center no-repeat;
+    background-size: 70%;
+}
+
+.club-description .social-list li a .insta{
+    background: url(../img/social/insta.png) center no-repeat;
+    background-size: 50%;
+}
+
+footer{
+    padding-top: 40px;
+    font-size: 17px;
+    text-align: center;
+    color: #dbc4e4;
+    margin-bottom: 10px;
+}
+
+.journey{
+    background-color: #e4e3e3;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.journey h2{
+    color: #003472;
+}
+
+.card-match{
+    position: relative;
+    border: 1px solid #e4e3e3;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.card-match .match-status{
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.in-progress{
+    color: #14920b;
+}
+
+.finish{
+    color: #9e9e9e;
+}
+
+.finish small,
+.card-match .coming-up{
+    font-style: normal;
+}
+
+.finish ~ ul li span {
+    filter: grayscale(.9);
+}
+
+
+.card-match ul li{
+    display: flex;
+    padding: 5px 1px;
+}
+
+.card-match ul li span{
+    font-size: 15px;
+    margin-top: 3px;
+    height:  25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #acbed4;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.card-match ul li .lead{
+    background-color: #14920b;
+}
+
+.card-match ul li .loose{
+    background-color: #df2810;
+}
+
+.card-match ul li img{
+    max-height: 30px;
+}
+
+.card-match ul li p{
+    margin-top: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.resume-button{
+    position: absolute;
+    right: 10px;
+    top: 60%;
+    transform: translateY(-60%);
+    height: 60px;
+    width: 90px;
+    background: grey;
+
+}
+
+.resume-button .resume-times{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    padding: 2px 8px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.623);
+}
+
+
+/*-------------------------------------*/
+
+@media screen and (max-width:718px){
+    .row{
+        display: block;
+    }
+
+    .block{
+        height: 50vh;
+    }
+
+    .block img{
+        max-width: 150px;
+    }
+
+    .header-block img {
+        max-height: 130px;
+    }
+}
+
+@media screen and (max-width:550px){
+    body{
+        padding: 10px;
+    }
+
+    .header-block img {
+        max-height: 100px;
+    }
+
+    .header-block{
+        height: 40vh;
+    }
+}
